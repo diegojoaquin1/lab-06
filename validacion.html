@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Validación</title>
+</head>
+<body>
+    <header>
+        <h1>Laboratorio 06 - Formularios</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="registro.html">Suscripción</a></li>
+                <li><a href="lenguajes.html">Preferencias</a></li>
+                <li><a href="validacion.html">Validación</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Formulario con Validaciones</h2>
+        
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Registro de usuario</legend>
+                
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" placeholder="usuario@ejemplo.com" required><br><br>
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" minlength="6" maxlength="12" placeholder="Entre 6 y 12 caracteres" required><br><br>
+                <label for="confirmar">Confirmar contraseña:</label>
+                <input type="password" id="confirmar" name="confirmar" placeholder="Repite tu contraseña" required> <br><br>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" placeholder="Ej: 987654321" required><br><br>
+                
+                <button type="submit">Registrarse</button>
+            </fieldset>
+        </form>
+    </main>
+    
+    <footer>
+        <p>Laboratorio 06 - Introducción al Desarrollo Web</p>
+    </footer>
+</body>
+</html>

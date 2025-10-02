@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preferencias de Lenguajes</title>
+</head>
+<body>
+    <header>
+        <h1>Laboratorio 06 - Formularios</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="registro.html">Suscripción</a></li>
+                <li><a href="lenguajes.html">Preferencias</a></li>
+                <li><a href="validacion.html">Validación</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Formulario de Preferencias</h2>
+        
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Información de perfil</legend>
+                <label>¿Qué lenguajes conoces?</label>
+                <select>
+                    <option>HTML</option>
+                    <option>CSS</option>
+                    <option>JavaScript</option>
+                    <option>Python</option>
+                    <option>Java</option>
+                </select> <br> <br>
+                <label for="horas">¿Cuántas horas de programación estudias al día?</label>
+                <input type="number" id="horas" name="horas" min="0" max="24" value="0">
+                <br><br>
+                
+                <button type="submit">Guardar</button>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
